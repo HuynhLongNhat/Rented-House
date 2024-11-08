@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 /* ROUTES */
-app.use("/api", webRoutes);
+app.use("/", webRoutes);
 
 app.listen(PORT, () => {
   console.log("jwt backend is running on the port = " + PORT);
